@@ -143,7 +143,6 @@ u8 TrySpawnObjectEvent(u8 localId, u8 mapNum, u8 mapGroup);
 u8 SpawnSpecialObjectEventParameterized(u8 graphicsId, u8 movementBehavior, u8 localId, s16 x, s16 y, u8 elevation);
 u8 SpawnSpecialObjectEvent(struct ObjectEventTemplate *);
 void SetSpritePosToMapCoords(s16 mapX, s16 mapY, s16 *destX, s16 *destY);
-void CameraObjectReset(void);
 void CameraObjectReset1(void);
 u8 LoadObjectEventPalette(u16);
 u8 UpdateSpritePaletteByTemplate(const struct SpriteTemplate *, struct Sprite *);

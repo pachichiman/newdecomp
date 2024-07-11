@@ -1540,7 +1540,7 @@ static bool8 FallWarpEffect_End(struct Task *task)
 {
     gPlayerAvatar.preventStep = FALSE;
     UnlockPlayerFieldControls();
-    CameraObjectReset();
+    CameraObjectReset1();
     UnfreezeObjectEvents();
     InstallCameraPanAheadCallback();
     DestroyTask(FindTaskIdByFunc(Task_FallWarpFieldEffect));
@@ -1823,7 +1823,7 @@ static bool8 EscalatorWarpIn_End(struct Task *task)
     objectEvent->noShadow = FALSE;
     if (ObjectEventClearHeldMovementIfFinished(objectEvent))
     {
-        CameraObjectReset();
+        CameraObjectReset1();
         UnlockPlayerFieldControls();
         ObjectEventSetHeldMovement(objectEvent, GetWalkNormalMovementAction(DIR_EAST));
         DestroyTask(FindTaskIdByFunc(Task_EscalatorWarpIn));
@@ -2116,7 +2116,7 @@ static bool8 LavaridgeGymB1FWarpExitEffect_PopOut(struct Task *task, struct Obje
     {
         task->data[0]++;
         objectEvent->invisible = FALSE;
-        CameraObjectReset();
+        CameraObjectReset1();
         PlaySE(SE_M_DIG);
         ObjectEventSetHeldMovement(objectEvent, GetJumpMovementAction(DIR_EAST));
     }
@@ -2555,7 +2555,7 @@ static void TeleportWarpInFieldEffect_SpinGround(struct Task *task)
         if ((++task->data[2]) > 4 && task->data[14] == objectEvent->facingDirection)
         {
             UnlockPlayerFieldControls();
-            CameraObjectReset();
+            CameraObjectReset1();
             UnfreezeObjectEvents();
             DestroyTask(FindTaskIdByFunc(Task_TeleportWarpIn));
         }

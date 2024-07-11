@@ -2703,7 +2703,7 @@ static void ObjectEventSetGraphics(struct ObjectEvent *objectEvent, const struct
     sprite->x += 8;
     sprite->y += 16 + sprite->centerToCornerVecY;
     if (objectEvent->trackedByCamera)
-        CameraObjectReset();
+        CameraObjectReset1();
 }
 
 void ObjectEventSetGraphicsId(struct ObjectEvent *objectEvent, u8 graphicsId)
@@ -3020,7 +3020,7 @@ void MoveObjectEventToMapCoords(struct ObjectEvent *objectEvent, s16 x, s16 y)
     sprite->y += 16 + sprite->centerToCornerVecY;
     ResetObjectEventFldEffData(objectEvent);
     if (objectEvent->trackedByCamera)
-        CameraObjectReset();
+        CameraObjectReset1();
 }
 
 void TryMoveObjectEventToMapCoords(u8 localId, u8 mapNum, u8 mapGroup, s16 x, s16 y)
@@ -3158,7 +3158,7 @@ static struct Sprite *FindCameraSprite(void)
     return NULL;
 }
 
-void CameraObjectReset(void)
+void CameraObjectReset1(void)
 {
     struct Sprite *camera = FindCameraSprite();
     if (camera != NULL)
@@ -3174,7 +3174,7 @@ void CameraObjectSetFollowedSpriteId(u8 spriteId)
     if (camera != NULL)
     {
         camera->sCamera_FollowSpriteId = spriteId;
-        CameraObjectReset();
+        CameraObjectReset1();
     }
 }
 

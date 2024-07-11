@@ -2201,7 +2201,7 @@ static void Task_DoPlayerSpinEntrance(u8 taskId)
                 object->fixedPriority = 0;
                 sprite->oam.priority = tPriority;
                 sprite->subpriority = tSubpriority;
-                CameraObjectReset();
+                CameraObjectReset1();
                 DestroyTask(taskId);
             }
             break;
