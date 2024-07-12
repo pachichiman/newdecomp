@@ -157,7 +157,7 @@ void Sunny_InitVars(void)
 {
     gWeatherPtr->targetColorMapIndex = 0;
     gWeatherPtr->colorMapStepDelay = 20;
-    Weather_SetBlendCoeffs(8, 12);
+    Weather_SetBlendCoeffs(8, 16);
     gWeatherPtr->noShadows = FALSE;
 }
 
@@ -485,7 +485,7 @@ void Rain_InitVars(void)
     gWeatherPtr->targetColorMapIndex = 3;
     gWeatherPtr->colorMapStepDelay = 20;
     SetRainStrengthFromSoundEffect(SE_RAIN);
-    Weather_SetBlendCoeffs(8, 12); // preserve shadow darkness
+    Weather_SetBlendCoeffs(8, 16); // preserve shadow darkness
     gWeatherPtr->noShadows = FALSE;
 }
 
@@ -780,7 +780,7 @@ void Snow_InitVars(void)
     gWeatherPtr->colorMapStepDelay = 20;
     gWeatherPtr->targetSnowflakeSpriteCount = 16;
     gWeatherPtr->snowflakeVisibleCounter = 0;
-    Weather_SetBlendCoeffs(8, 12); // preserve shadow darkness
+    Weather_SetBlendCoeffs(8, 16); // preserve shadow darkness
     gWeatherPtr->noShadows = FALSE;
 }
 
@@ -1057,7 +1057,7 @@ void Thunderstorm_InitVars(void)
     gWeatherPtr->weatherGfxLoaded = FALSE;  // duplicate assignment
     gWeatherPtr->thunderEnqueued = FALSE;
     SetRainStrengthFromSoundEffect(SE_THUNDERSTORM);
-    Weather_SetBlendCoeffs(8, 12); // preserve shadow darkness
+    Weather_SetBlendCoeffs(8, 16); // preserve shadow darkness
     gWeatherPtr->noShadows = FALSE;
 }
 
@@ -1087,7 +1087,7 @@ void Downpour_InitVars(void)
     gWeatherPtr->colorMapStepDelay = 20;
     gWeatherPtr->weatherGfxLoaded = FALSE;  // duplicate assignment
     SetRainStrengthFromSoundEffect(SE_DOWNPOUR);
-    Weather_SetBlendCoeffs(8, 12); // preserve shadow darkness
+    Weather_SetBlendCoeffs(8, 16); // preserve shadow darkness
     gWeatherPtr->noShadows = FALSE;
 }
 
@@ -2295,7 +2295,7 @@ void Shade_InitVars(void)
     gWeatherPtr->initStep = 0;
     gWeatherPtr->targetColorMapIndex = 3;
     gWeatherPtr->colorMapStepDelay = 20;
-    Weather_SetBlendCoeffs(8, 12); // preserve shadow darkness
+    Weather_SetBlendCoeffs(8, 16); // preserve shadow darkness
     gWeatherPtr->noShadows = FALSE;
 }
 
