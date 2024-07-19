@@ -1634,3 +1634,41 @@ const u16 ALIGNED(4) gTilesetPalettes_UnionRoom[][16] =
 };
 
 const u32 gTilesetTiles_UnionRoom[] = INCBIN_U32("data/tilesets/secondary/union_room/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_GeovaleTileset[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_tileset/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_GeovaleTileset[] = INCBIN_U32("data/tilesets/secondary/geovale_tileset/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_gTileset_AstraGeneral[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/astra_general/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_gTileset_AstraGeneral[] = INCBIN_U32("data/tilesets/primary/astra_general/tiles.4bpp.lz");

@@ -849,3 +849,25 @@ const struct Tileset gTileset_UnionRoom =
     .metatileAttributes = gMetatileAttributes_UnionRoom,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_GeovaleTileset =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GeovaleTileset,
+    .palettes = gTilesetPalettes_GeovaleTileset,
+    .metatiles = gMetatiles_GeovaleTileset,
+    .metatileAttributes = gMetatileAttributes_GeovaleTileset,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_gTileset_AstraGeneral =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_gTileset_AstraGeneral,
+    .palettes = gTilesetPalettes_gTileset_AstraGeneral,
+    .metatiles = gMetatiles_gTileset_AstraGeneral,
+    .metatileAttributes = gMetatileAttributes_gTileset_AstraGeneral,
+    .callback = NULL,
+};
