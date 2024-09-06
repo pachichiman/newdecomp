@@ -891,7 +891,7 @@ const struct Tileset gTileset_GeovaleTown =
     .palettes = gTilesetPalettes_GeovaleTown,
     .metatiles = gMetatiles_GeovaleTown,
     .metatileAttributes = gMetatileAttributes_GeovaleTown,
-    .callback = InitTilesetAnim_Petalburg,
+    .callback = InitTilesetAnim_Geovale,
 };
 
 const struct Tileset gTileset_LarimarTown =

@@ -853,7 +853,7 @@ void InitTilesetAnim_BattleDome(void)
 void InitTilesetAnim_Geovale(void)
 {
     sSecondaryTilesetAnimCounter = 0;
-    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCounterMax = 256;
     sSecondaryTilesetAnimCallback = TilesetAnim_Geovale;
 }
 
@@ -1089,7 +1089,7 @@ static void QueueAnimTiles_BattleFrontierOutsideEast_Flag(u16 timer)
 static void QueueAnimTiles_Blue_Flower(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_Blue_Flower); 
-    AppendTilesetAnimToBuffer(gTilesetAnims_Blue_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 160)), 4 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Blue_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(672)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Slateport_Balloons(u16 timer)
