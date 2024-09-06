@@ -213,3 +213,12 @@ const u16 gMetatileAttributes_GeovaleTileset[] = INCBIN_U16("data/tilesets/secon
 
 const u16 gMetatiles_gTileset_AstraGeneral[] = INCBIN_U16("data/tilesets/primary/astra_general/metatiles.bin");
 const u16 gMetatileAttributes_gTileset_AstraGeneral[] = INCBIN_U16("data/tilesets/primary/astra_general/metatile_attributes.bin");
+
+const u16 gMetatiles_gTileset_Geovale[] = INCBIN_U16("data/tilesets/secondary/geovale/metatiles.bin");
+const u16 gMetatileAttributes_gTileset_Geovale[] = INCBIN_U16("data/tilesets/secondary/geovale/metatile_attributes.bin");
+
+const u16 gMetatiles_GeovaleTown[] = INCBIN_U16("data/tilesets/secondary/geovale_town/metatiles.bin");
+const u16 gMetatileAttributes_GeovaleTown[] = INCBIN_U16("data/tilesets/secondary/geovale_town/metatile_attributes.bin");
+
+const u16 gMetatiles_LarimarTown[] = INCBIN_U16("data/tilesets/secondary/larimar_town/metatiles.bin");
+const u16 gMetatileAttributes_LarimarTown[] = INCBIN_U16("data/tilesets/secondary/larimar_town/metatile_attributes.bin");

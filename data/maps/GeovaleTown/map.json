@@ -2,27 +2,52 @@
   "id": "MAP_GEOVALE_TOWN",
   "name": "GeovaleTown",
   "layout": "LAYOUT_GEOVALE_TOWN",
-  "music": "MUS_RG_BERRY_PICK",
+  "music": "MUS_UNDERWATER",
   "region_map_section": "MAPSEC_GEOVALE_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_VOLCANIC_ASH",
   "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_ROUTE1",
+      "offset": 12,
+      "direction": "up"
+    }
+  ],
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MEW",
+      "x": 15,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 13,
+      "x": 6,
+      "y": 5,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN",
       "dest_warp_id": "4"
+    },
+    {
+      "x": 24,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_LARIMAR_TOWN",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -871,3 +871,36 @@ const struct Tileset gTileset_gTileset_AstraGeneral =
     .metatileAttributes = gMetatileAttributes_gTileset_AstraGeneral,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_gTileset_Geovale =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_gTileset_Geovale,
+    .palettes = gTilesetPalettes_gTileset_Geovale,
+    .metatiles = gMetatiles_gTileset_Geovale,
+    .metatileAttributes = gMetatileAttributes_gTileset_Geovale,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_GeovaleTown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GeovaleTown,
+    .palettes = gTilesetPalettes_GeovaleTown,
+    .metatiles = gMetatiles_GeovaleTown,
+    .metatileAttributes = gMetatileAttributes_GeovaleTown,
+    .callback = InitTilesetAnim_Petalburg,
+};
+
+const struct Tileset gTileset_LarimarTown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LarimarTown,
+    .palettes = gTilesetPalettes_LarimarTown,
+    .metatiles = gMetatiles_LarimarTown,
+    .metatileAttributes = gMetatileAttributes_LarimarTown,
+    .callback = NULL,
+};

@@ -4424,12 +4424,42 @@
     {
       "id": "LAYOUT_GEOVALE_TOWN",
       "name": "GeovaleTown_Layout",
-      "width": 40,
-      "height": 60,
+      "width": 28,
+      "height": 28,
       "primary_tileset": "gTileset_gTileset_AstraGeneral",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_GeovaleTown",
       "border_filepath": "data/layouts/GeovaleTown/border.bin",
       "blockdata_filepath": "data/layouts/GeovaleTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1",
+      "name": "Route1_Layout",
+      "width": 44,
+      "height": 24,
+      "primary_tileset": "gTileset_gTileset_AstraGeneral",
+      "secondary_tileset": "gTileset_GeovaleTown",
+      "border_filepath": "data/layouts/Route1/border.bin",
+      "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LARIMAR_TOWN",
+      "name": "LarimarTown_Layout",
+      "width": 44,
+      "height": 34,
+      "primary_tileset": "gTileset_gTileset_AstraGeneral",
+      "secondary_tileset": "gTileset_LarimarTown",
+      "border_filepath": "data/layouts/LarimarTown/border.bin",
+      "blockdata_filepath": "data/layouts/LarimarTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 28,
+      "height": 40,
+      "primary_tileset": "gTileset_gTileset_AstraGeneral",
+      "secondary_tileset": "gTileset_LarimarTown",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
     }
   ]
 }

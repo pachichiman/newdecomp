@@ -43,6 +43,7 @@ static void TilesetAnim_MauvilleGym(u16);
 static void TilesetAnim_BikeShop(u16);
 static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
+static void TilesetAnim_Geovale(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
@@ -73,6 +74,7 @@ static void QueueAnimTiles_MauvilleGym_ElectricGates(u16);
 static void QueueAnimTiles_SootopolisGym_Waterfalls(u16);
 static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
+static void QueueAnimTiles_Blue_Flower(u16);
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
@@ -159,6 +161,20 @@ const u16 *const gTilesetAnims_Lavaridge_Steam[] = {
     gTilesetAnims_Lavaridge_Steam_Frame1,
     gTilesetAnims_Lavaridge_Steam_Frame2,
     gTilesetAnims_Lavaridge_Steam_Frame3
+};
+
+const u16 gTilesetAnims_Blue_Flower_Frame0[] = INCBIN_U16("data/tilesets/secondary/geovale_town/anim/blue_flower/0.4bpp");
+const u16 gTilesetAnims_Blue_Flower_Frame1[] = INCBIN_U16("data/tilesets/secondary/geovale_town/anim/blue_flower/1.4bpp");
+const u16 gTilesetAnims_Blue_Flower_Frame2[] = INCBIN_U16("data/tilesets/secondary/geovale_town/anim/blue_flower/2.4bpp");
+const u16 gTilesetAnims_Blue_Flower_Frame3[] = INCBIN_U16("data/tilesets/secondary/geovale_town/anim/blue_flower/3.4bpp");
+const u16 gTilesetAnims_Blue_Flower_Frame4[] = INCBIN_U16("data/tilesets/secondary/geovale_town/anim/blue_flower/4.4bpp");
+
+const u16 *const gTilesetAnims_Blue_Flower[] = {
+    gTilesetAnims_Blue_Flower_Frame0,
+    gTilesetAnims_Blue_Flower_Frame1,
+    gTilesetAnims_Blue_Flower_Frame2,
+    gTilesetAnims_Blue_Flower_Frame3,
+    gTilesetAnims_Blue_Flower_Frame4
 };
 
 const u16 gTilesetAnims_Pacifidlog_LogBridges_Frame0[] = INCBIN_U16("data/tilesets/secondary/pacifidlog/anim/log_bridges/0.4bpp");
@@ -834,6 +850,13 @@ void InitTilesetAnim_BattleDome(void)
     sSecondaryTilesetAnimCallback = TilesetAnim_BattleDome;
 }
 
+void InitTilesetAnim_Geovale(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Geovale;
+}
+
 static void TilesetAnim_Rustboro(u16 timer)
 {
     if (timer % 8 == 0)
@@ -955,6 +978,12 @@ static void TilesetAnim_BattleFrontierOutsideEast(u16 timer)
         QueueAnimTiles_BattleFrontierOutsideEast_Flag(timer / 8);
 }
 
+static void TilesetAnim_Geovale(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_Blue_Flower(timer / 16);
+}
+
 static void QueueAnimTiles_General_LandWaterEdge(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_LandWaterEdge);
@@ -1055,6 +1084,12 @@ static void QueueAnimTiles_BattleFrontierOutsideEast_Flag(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_BattleFrontierOutsideEast_Flag);
     AppendTilesetAnimToBuffer(gTilesetAnims_BattleFrontierOutsideEast_Flag[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 218)), 6 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Blue_Flower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Blue_Flower); 
+    AppendTilesetAnimToBuffer(gTilesetAnims_Blue_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 160)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Slateport_Balloons(u16 timer)

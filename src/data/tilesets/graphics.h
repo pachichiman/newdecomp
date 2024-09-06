@@ -1672,3 +1672,60 @@ const u16 gTilesetPalettes_gTileset_AstraGeneral[][16] =
 };
 
 const u32 gTilesetTiles_gTileset_AstraGeneral[] = INCBIN_U32("data/tilesets/primary/astra_general/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_gTileset_Geovale[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_gTileset_Geovale[] = INCBIN_U32("data/tilesets/secondary/geovale/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_GeovaleTown[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/geovale_town/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_GeovaleTown[] = INCBIN_U32("data/tilesets/secondary/geovale_town/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_LarimarTown[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/larimar_town/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_LarimarTown[] = INCBIN_U32("data/tilesets/secondary/larimar_town/tiles.4bpp.lz");
